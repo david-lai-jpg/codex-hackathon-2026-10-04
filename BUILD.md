@@ -1,6 +1,6 @@
 # 動新聞 Breaking News: build brief
 
-Decided 2026-10-04 09:40. HADK was used only to pick the idea (`hadk idea select idea-breaking-news`).
+Decided 2026-10-04 09:40.
 Event: 12:00 to 17:00, solo, 1-minute live demo, peer vote. Product code starts at 12:00.
 
 ## Pitch
@@ -169,8 +169,3 @@ Finish each step end to end before you start the next.
 - `spike/breaking-news/run1/`, `run2/`, `run3/`: the reference clips (`clip-sub.mp4`) with their
   frames, voice, story, subtitles and timings. Run 1 lost frame 4 to the image rate limit.
 - `spike/breaking-news/run2/clip-sub.mp4`: backup clip if the app fails on stage.
-
-## Known issue
-
-`hadk next` recommends `hadk submit` all day. Its deadline policy uses fixed hours, so from 6 to
-12 hours before the deadline it blocks the idea, scope and scaffold steps. Ignore it.

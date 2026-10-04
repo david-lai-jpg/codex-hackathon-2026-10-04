@@ -5,6 +5,5 @@ node_modules/
 .playwright-cli/
 e2e/artifacts/
 *.pen
-.hackathon/
 .goals/
 video/raw/
