@@ -9,9 +9,10 @@ import { pathToFileURL } from 'node:url';
 // The graph is built on the voice timeline, so subtitles.json keeps 1x times.
 const SPEED = 1.3;
 
+// A render takes 5-25 s. The kill timer turns a stuck ffmpeg (seen once, cause unknown) into an error.
 const run = (cmd, args) => {
-  const r = spawnSync(cmd, args, { encoding: 'utf8' });
-  if (r.status !== 0) throw new Error(`${cmd} failed: ${r.stderr.slice(-800)}`);
+  const r = spawnSync(cmd, args, { encoding: 'utf8', timeout: 120_000, killSignal: 'SIGKILL' });
+  if (r.status !== 0) throw new Error(`${cmd} failed: ${r.error?.message ?? r.stderr.slice(-800)}`);
   return r.stdout;
 };
 const esc = (s) => s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
@@ -82,12 +83,13 @@ export function compose(dir, story, frames, audio, clip = join(dir, 'clip.mp4'))
     `[${n + 2}:a]atempo=${SPEED}[aout]`,
   ].join(';');
   run('ffmpeg', [
-    '-y', '-v', 'error',
+    '-y', '-v', 'error', '-nostdin',
     ...frames.flatMap((f) => ['-i', f]),
-    '-loop', '1', '-i', overlay,
-    '-loop', '1', '-framerate', '25', '-i', ticker,
+    // Looped stills get a fixed length, so every input ends on its own.
+    '-loop', '1', '-t', String(seconds), '-i', overlay,
+    '-loop', '1', '-framerate', '25', '-t', String(seconds), '-i', ticker,
     '-i', audio,
-    ...subPngs.flatMap((p) => ['-loop', '1', '-i', p]),
+    ...subPngs.flatMap((p) => ['-loop', '1', '-t', String(seconds), '-i', p]),
     '-filter_complex', graph,
     '-map', '[vout]', '-map', '[aout]',
     '-c:v', 'libx264', '-preset', 'veryfast', '-pix_fmt', 'yuv420p', '-c:a', 'aac',

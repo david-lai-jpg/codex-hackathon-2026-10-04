@@ -1,0 +1,144 @@
+[
+ {
+  "t": 0,
+  "type": "tip",
+  "data": {
+   "text": "跟主管請假被已讀不回",
+   "created": "2026-10-04T05:42:39.329Z"
+  }
+ },
+ {
+  "t": 17.44,
+  "type": "script",
+  "data": {
+   "headline": "請假已讀不回！全國停擺",
+   "ticker": "主管拇指離奇失聯｜請假申請卡住國運｜點個頭竟引發紙崩",
+   "anchor_script": "震撼！員工只是請一天假，主管竟然已讀不回！訊息送達，假期卻原地失蹤！當事人守著手機，從早等到盆栽都彎腰！辦公室緊急拉起封鎖線，搜救主管失聯的回覆能力！更驚人的是，主管終於點頭，整櫃文件當場雪崩！這是假單，還是國運開關？本台虛構追蹤，提醒您：別讓員工等到長香菇！",
+   "cast": "The employee is a 28-year-old woman with a short black bob, a yellow cardigan, white shirt, and navy trousers; the supervisor is a 45-year-old man with neatly parted black hair, a gray suit, and a green tie.",
+   "shots": [
+    {
+     "caption_zh": "請假訊息送出",
+     "scene_en": "In an office, the employee anxiously taps a phone displaying only two plain colored circles while the supervisor sits at a distant desk, filmed over her shoulder with no text, letters, or logos anywhere."
+    },
+    {
+     "caption_zh": "主管回覆能力失蹤",
+     "scene_en": "In the same office, the supervisor glances at his phone and freezes with his thumb hovering dramatically above its blank screen, filmed in an extreme low-angle close-up with no text, letters, or logos anywhere."
+    },
+    {
+     "caption_zh": "等到盆栽也彎腰",
+     "scene_en": "At her office desk, the employee slumps beside an absurdly drooping potted plant while staring at her blank phone, filmed in a wide symmetrical shot with no text, letters, or logos anywhere."
+    },
+    {
+     "caption_zh": "封鎖現場搜救回覆",
+     "scene_en": "In the office, the employee surrounds the motionless supervisor with plain orange inflatable barriers and searches around his hovering thumb using a magnifying glass, filmed from overhead with no text, letters, or logos anywhere."
+    },
+    {
+     "caption_zh": "主管點頭文件雪崩",
+     "scene_en": "In the office, the supervisor finally nods as a cabinet erupts into an avalanche of blank paper and the employee triumphantly raises both arms beneath the fluttering sheets, filmed in a dramatic wide low-angle shot with no text, letters, or logos anywhere."
+    }
+   ]
+  }
+ },
+ {
+  "t": 17.44,
+  "type": "frame_start",
+  "data": {
+   "i": 0
+  }
+ },
+ {
+  "t": 17.44,
+  "type": "frame_start",
+  "data": {
+   "i": 1
+  }
+ },
+ {
+  "t": 17.44,
+  "type": "frame_start",
+  "data": {
+   "i": 2
+  }
+ },
+ {
+  "t": 17.44,
+  "type": "frame_start",
+  "data": {
+   "i": 3
+  }
+ },
+ {
+  "t": 17.44,
+  "type": "frame_start",
+  "data": {
+   "i": 4
+  }
+ },
+ {
+  "t": 24.53,
+  "type": "voice",
+  "data": {
+   "url": "/runs/20261004054239-nd99/anchor.mp3"
+  }
+ },
+ {
+  "t": 25.15,
+  "type": "frame",
+  "data": {
+   "i": 1,
+   "url": "/runs/20261004054239-nd99/frame-1.jpg"
+  }
+ },
+ {
+  "t": 26,
+  "type": "frame",
+  "data": {
+   "i": 4,
+   "url": "/runs/20261004054239-nd99/frame-4.jpg"
+  }
+ },
+ {
+  "t": 26.54,
+  "type": "frame",
+  "data": {
+   "i": 0,
+   "url": "/runs/20261004054239-nd99/frame-0.jpg"
+  }
+ },
+ {
+  "t": 26.57,
+  "type": "frame",
+  "data": {
+   "i": 3,
+   "url": "/runs/20261004054239-nd99/frame-3.jpg"
+  }
+ },
+ {
+  "t": 27.82,
+  "type": "frame",
+  "data": {
+   "i": 2,
+   "url": "/runs/20261004054239-nd99/frame-2.jpg"
+  }
+ },
+ {
+  "t": 27.82,
+  "type": "clip_start",
+  "data": {}
+ },
+ {
+  "t": 39.2,
+  "type": "clip",
+  "data": {
+   "url": "/runs/20261004054239-nd99/clip.mp4",
+   "seconds": 27.93
+  }
+ },
+ {
+  "t": 39.2,
+  "type": "ready",
+  "data": {
+   "total_s": 39.2
+  }
+ }
+]

@@ -26,7 +26,12 @@ Peer vote after the final demo: each checked-in attendee ranks their top 3 teams
 
 ## Submission
 
-- submit: 1-minute live team demo: the problem, what you built, and how it works
+Rules given on the day (2026-10-04):
+
+1. Submit the code by 14:30.
+2. Then submit a 1-minute YouTube video.
+3. If the video is chosen, the team gives a 1-minute live demo: the problem, what you built, and how
+   it works.
 
 ## Prizes
 

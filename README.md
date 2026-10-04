@@ -83,6 +83,7 @@ Steps:
 | `public/` | The page: idle, control room, and ON AIR screens |
 | `runs/` | One folder per run: story, frames, voice, `clip.mp4`. 3 saved runs ship as video references |
 | `e2e/` | End-to-end check |
+| `video/make.mjs` | Makes the 60 s demo video `video/demo.mp4` (2 live runs, control-room recording, ffmpeg cut) |
 | `spike/breaking-news/` | Reference clips from the first experiments |
 | `design/screens/` | Prototype screens |
 | `BUILD.md` | Spec, measured timings, and limits |
