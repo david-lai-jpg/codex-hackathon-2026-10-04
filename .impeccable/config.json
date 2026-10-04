@@ -1,0 +1,14 @@
+{
+  "detector": {
+    "ignoreRules": [],
+    "ignoreFiles": [],
+    "ignoreValues": [
+      {
+        "rule": "bounce-easing",
+        "value": "cubic-bezier(.3, 1.6, .5, 1)",
+        "createdAt": "2026-10-04T02:30:17.706Z",
+        "reason": "Claude: intentional overshoot slam for stamp, frame landing and done sticker; the user asked for a kuso 北爛 蘋果動新聞 tabloid UI (BUILD.md UI section)"
+      }
+    ]
+  }
+}

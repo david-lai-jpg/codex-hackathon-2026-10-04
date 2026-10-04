@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="zh-Hant-TW">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>芭樂動新聞</title>
+  <link rel="icon" href="data:,">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Noto+Sans+TC:wght@500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body data-mode="idle">
+<div id="stage">
+  <header class="topbar">
+    <button class="brand" id="home" title="回到爆料專線">芭樂動新聞</button>
+    <div class="starburst"><svg viewBox="0 0 220 220"><polygon/></svg><span>獨家</span></div>
+    <button class="replay-badge" id="replayBadge">▶ 黃金重播 <b id="replaySpeed">3X</b></button>
+    <div class="live-pill"><i></i>LIVE</div>
+    <div class="clock" id="clock">CH.886 · 10:24</div>
+  </header>
+  <div class="replay-list" id="replayList" hidden></div>
+
+  <section class="idle">
+    <div class="banner">爆料專線</div>
+    <div class="tipbox"><textarea id="tip" maxlength="200" placeholder="講出你的鳥事，&#10;馬上讓全台看傻眼！"></textarea></div>
+    <div class="sticker shock">震驚！</div>
+    <button class="mic" id="mic" aria-label="按住爆料">
+      <svg viewBox="0 0 24 24"><path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/><path d="M12 19v3"/></svg>
+    </button>
+    <div class="mic-label" id="micLabel">按住爆料</div>
+    <button class="go" id="go">給我上頭條！</button>
+    <div class="control-room">
+      <div class="cr-head">
+        <div><h2>控制室</h2><p>CONTROL ROOM · 待命中</p></div>
+        <div class="cr-watch"><b>00.0</b><span>秒<small>製作時間</small></span></div>
+      </div>
+      <div class="cr-row"><i>01</i><div><b>神筆亂噴組</b><small>SCRIPT</small></div><em>待命中</em></div>
+      <div class="cr-row"><i>02</i><div><b>3D 亂演組</b><small>FRAMES ×5</small></div><em>待命中</em></div>
+      <div class="cr-row"><i>03</i><div><b>主播激動台</b><small>VOICE</small></div><em>待命中</em></div>
+      <div class="cr-row"><i>04</i><div><b>ON AIR 全台放送</b><small>RENDER</small></div><em>待命中</em></div>
+    </div>
+  </section>
+
+  <section class="run">
+    <div class="tipcard"><small>爆料內容</small><q id="tipQuote"></q></div>
+    <div class="stamp">已收到爆料</div>
+    <div class="bigwatch"><b id="watch">00.0</b><span>秒<small>製作時間</small></span></div>
+
+    <div class="station s1" id="s1" data-state="wait">
+      <div class="head"><i>01</i><b>神筆亂噴組</b><span class="busy">狂寫中，別吵！</span><em class="chip">待命中</em></div>
+      <h3 id="headline"></h3>
+      <p class="ticker-line" id="tickerLine"></p>
+      <p class="script" id="script"></p>
+    </div>
+    <div class="station s2" id="s2" data-state="wait">
+      <div class="head"><i>02</i><b>3D 亂演組</b><span class="busy">3D 誇張中，快吐血</span><em class="chip">待命中</em></div>
+      <div class="shots" id="shots"></div>
+    </div>
+    <div class="station s3" id="s3" data-state="wait">
+      <div class="head"><i>03</i><b>主播激動台</b><span class="busy">哀嚎配音中，請稍候</span><em class="chip">待命中</em></div>
+      <div class="wave" id="wave"></div>
+    </div>
+    <div class="station s4" id="s4" data-state="wait">
+      <div class="head"><i>04</i><b>ON AIR 全台放送</b><span class="busy">準備轟動，3、2、1…</span><em class="chip">待命中</em></div>
+      <p class="wait-line">畫面到齊就開剪 · RENDER</p>
+      <div class="ghost">ON AIR</div>
+    </div>
+  </section>
+
+  <section class="air">
+    <div class="onair-badge"><i></i>ON AIR</div>
+    <div class="onair-sub">全台放送中</div>
+    <button class="again" id="again">再爆一則！</button>
+    <button class="replay-btn" id="replayBtn"><span>▶</span>黃金重播</button>
+    <video id="player" playsinline preload="auto"></video>
+    <div class="progress"><i id="progress"></i></div>
+    <div class="done-sticker" id="doneSticker">
+      <strong>全台轟動！</strong><small>製作時間</small><div><b id="doneTime">0.0</b>秒</div>
+    </div>
+  </section>
+
+  <footer class="ticker"><b>快訊</b><div class="track"><span id="tickerText"></span></div></footer>
+  <div class="sting" id="sting"><div class="band"><b>BREAKING NEWS</b><span>獨家</span></div></div>
+  <div class="overlay" id="loading" hidden><div class="card yellow">黃金重播準備中…</div></div>
+  <div class="overlay" id="errorCard" hidden><div class="card"><strong>抱歉！伺服器被全台關心打爆了！</strong><small id="errorDetail"></small><em>點一下回到爆料專線</em></div></div>
+</div>
+<script src="/app.js" type="module"></script>
+</body>
+</html>

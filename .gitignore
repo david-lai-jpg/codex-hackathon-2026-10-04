@@ -2,6 +2,8 @@ node_modules/
 runs/
 .env*
 .DS_Store
+.playwright-cli/
+e2e/artifacts/
 *.pen
 .hackathon/
 .goals/

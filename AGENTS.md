@@ -1,7 +1,8 @@
 # Agent Instructions
 
-Build from [BUILD.md](./BUILD.md). It holds the selected idea (動新聞 Breaking News), the demo
-plan, the measured pipeline, the hard limits, and the build order.
+The app is built. To set it up and run it, follow the "Agent setup" section of
+[README.md](./README.md). [BUILD.md](./BUILD.md) is the spec: the idea (動新聞 Breaking News), the
+demo plan, the measured pipeline, and the hard limits.
 
 HADK was used only to pick the idea. Do not follow the HACKATHON.md phases or `hadk next`: on a
 one-day event its deadline policy blocks the idea, scope and scaffold steps and recommends
