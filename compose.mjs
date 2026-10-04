@@ -5,6 +5,10 @@ import { spawnSync } from 'node:child_process';
 import { join } from 'node:path';
 import { pathToFileURL } from 'node:url';
 
+// The whole clip (picture and voice) plays this much faster than the voice was recorded.
+// The graph is built on the voice timeline, so subtitles.json keeps 1x times.
+const SPEED = 1.3;
+
 const run = (cmd, args) => {
   const r = spawnSync(cmd, args, { encoding: 'utf8' });
   if (r.status !== 0) throw new Error(`${cmd} failed: ${r.stderr.slice(-800)}`);
@@ -74,6 +78,8 @@ export function compose(dir, story, frames, audio, clip = join(dir, 'clip.mp4'))
     `[base][${n}:v]overlay=0:0[o1]`,
     `[o1][${n + 1}:v]overlay=x='W-mod(t*220+W*0.6,W+w)':y=648[s0]`,
     ...subs.map((s, k) => `[s${k}][${n + 3 + k}:v]overlay=0:496:enable='gte(t,${s.start})*lt(t,${s.end})'[s${k + 1}]`),
+    `[s${subs.length}]setpts=PTS/${SPEED},fps=25[vout]`,
+    `[${n + 2}:a]atempo=${SPEED}[aout]`,
   ].join(';');
   run('ffmpeg', [
     '-y', '-v', 'error',
@@ -83,11 +89,11 @@ export function compose(dir, story, frames, audio, clip = join(dir, 'clip.mp4'))
     '-i', audio,
     ...subPngs.flatMap((p) => ['-loop', '1', '-i', p]),
     '-filter_complex', graph,
-    '-map', `[s${subs.length}]`, '-map', `${n + 2}:a`,
+    '-map', '[vout]', '-map', '[aout]',
     '-c:v', 'libx264', '-preset', 'veryfast', '-pix_fmt', 'yuv420p', '-c:a', 'aac',
-    '-t', String(seconds), clip,
+    '-t', String(seconds / SPEED), clip,
   ]);
-  return { clip, seconds, subtitles: subs };
+  return { clip, seconds: +(seconds / SPEED).toFixed(2), subtitles: subs };
 }
 
 if (import.meta.url === pathToFileURL(process.argv[1]).href) {

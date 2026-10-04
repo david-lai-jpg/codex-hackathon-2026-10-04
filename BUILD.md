@@ -164,7 +164,8 @@ Finish each step end to end before you start the next.
 ## Spike (reference only, written before the event)
 
 - `spike/breaking-news/bench.mjs`: API calls, prompts, schema, parameters, and timings.
-- `spike/breaking-news/compose.mjs`: ffmpeg compositor with subtitles. The app uses it unchanged.
+- `spike/breaking-news/compose.mjs`: ffmpeg compositor with subtitles. The app's `compose.mjs` is
+  this file plus a 1.3x speed-up of the whole clip (picture and voice).
 - `spike/breaking-news/run1/`, `run2/`, `run3/`: the reference clips (`clip-sub.mp4`) with their
   frames, voice, story, subtitles and timings. Run 1 lost frame 4 to the image rate limit.
 - `spike/breaking-news/run2/clip-sub.mp4`: backup clip if the app fails on stage.

@@ -1,0 +1,144 @@
+[
+ {
+  "t": 0,
+  "type": "tip",
+  "data": {
+   "text": "同事偷吃我的午餐",
+   "created": "2026-10-04T05:26:53.490Z"
+  }
+ },
+ {
+  "t": 15.2,
+  "type": "script",
+  "data": {
+   "headline": "午餐失竊！辦公室國安危機",
+   "ticker": "便當遭神祕清空｜同事嘴角露餡｜最後雞腿下落不明",
+   "anchor_script": "午休才剛開始，便當竟已全空！上班族打開餐盒，只剩一粒飯孤軍奮戰！隔壁同事嘴角油光閃爍，卻辯稱只是臉部保養！失主當場拉起封鎖線，茶水間進入最高戒備！專案小組翻遍冰箱，赫然發現最後一隻雞腿，竟躲在嫌疑人的抽屜裡！這究竟是飢餓犯罪，還是下午開會前的糧食政變？本台持續荒唐追蹤！",
+   "cast": "The lunch owner is a 30-year-old woman with a short black bob, a mustard cardigan, white blouse, and navy trousers; the lunch thief is a 35-year-old man with short curly brown hair, a pale blue shirt, gray trousers, and a crooked burgundy tie.",
+   "shots": [
+    {
+     "caption_zh": "便當只剩一粒飯",
+     "scene_en": "In an office break room, the lunch owner opens a plain lunchbox containing one grain of rice and gasps dramatically as the camera looks down over her shoulder, with no text, letters, or logos anywhere."
+    },
+    {
+     "caption_zh": "嘴角油光出賣他",
+     "scene_en": "Beside the break room counter, the lunch thief nervously rubs his shiny mouth as if applying moisturizer while the lunch owner stares at him, captured in an exaggerated low-angle close-up with no text, letters, or logos anywhere."
+    },
+    {
+     "caption_zh": "茶水間全面封鎖",
+     "scene_en": "In a wide shot of the office break room, the lunch owner stretches plain red ribbon between chairs to form a dramatic barricade while the lunch thief freezes with a spoon in his hand, with no text, letters, or logos anywhere."
+    },
+    {
+     "caption_zh": "冰箱搜索撲空",
+     "scene_en": "From inside an empty office refrigerator, the camera watches the lunch owner inspect every shelf with a magnifying glass while the lunch thief tiptoes away behind her, with no text, letters, or logos anywhere."
+    },
+    {
+     "caption_zh": "雞腿藏抽屜現形",
+     "scene_en": "In a high-angle shot over an office desk, the lunch owner pulls open a drawer revealing a chicken drumstick on a plain plate while the lunch thief drops to his knees in theatrical defeat, with no text, letters, or logos anywhere."
+    }
+   ]
+  }
+ },
+ {
+  "t": 15.2,
+  "type": "frame_start",
+  "data": {
+   "i": 0
+  }
+ },
+ {
+  "t": 15.2,
+  "type": "frame_start",
+  "data": {
+   "i": 1
+  }
+ },
+ {
+  "t": 15.2,
+  "type": "frame_start",
+  "data": {
+   "i": 2
+  }
+ },
+ {
+  "t": 15.2,
+  "type": "frame_start",
+  "data": {
+   "i": 3
+  }
+ },
+ {
+  "t": 15.2,
+  "type": "frame_start",
+  "data": {
+   "i": 4
+  }
+ },
+ {
+  "t": 20.86,
+  "type": "voice",
+  "data": {
+   "url": "/runs/20261004052653-nd9o/anchor.mp3"
+  }
+ },
+ {
+  "t": 23.05,
+  "type": "frame",
+  "data": {
+   "i": 3,
+   "url": "/runs/20261004052653-nd9o/frame-3.jpg"
+  }
+ },
+ {
+  "t": 25.17,
+  "type": "frame",
+  "data": {
+   "i": 1,
+   "url": "/runs/20261004052653-nd9o/frame-1.jpg"
+  }
+ },
+ {
+  "t": 25.26,
+  "type": "frame",
+  "data": {
+   "i": 0,
+   "url": "/runs/20261004052653-nd9o/frame-0.jpg"
+  }
+ },
+ {
+  "t": 25.37,
+  "type": "frame",
+  "data": {
+   "i": 4,
+   "url": "/runs/20261004052653-nd9o/frame-4.jpg"
+  }
+ },
+ {
+  "t": 25.41,
+  "type": "frame",
+  "data": {
+   "i": 2,
+   "url": "/runs/20261004052653-nd9o/frame-2.jpg"
+  }
+ },
+ {
+  "t": 25.41,
+  "type": "clip_start",
+  "data": {}
+ },
+ {
+  "t": 38.34,
+  "type": "clip",
+  "data": {
+   "url": "/runs/20261004052653-nd9o/clip.mp4",
+   "seconds": 35.904
+  }
+ },
+ {
+  "t": 38.34,
+  "type": "ready",
+  "data": {
+   "total_s": 38.34
+  }
+ }
+]
