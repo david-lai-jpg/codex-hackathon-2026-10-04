@@ -1,6 +1,6 @@
 node_modules/
-runs/
 .env*
+!.env.example
 .DS_Store
 .playwright-cli/
 e2e/artifacts/

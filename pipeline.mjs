@@ -6,6 +6,12 @@ import { EventEmitter } from 'node:events';
 import { join } from 'node:path';
 
 export const RUNS = join(import.meta.dirname, 'runs');
+// Load .env when it exists. A key already set in the shell wins.
+try {
+  process.loadEnvFile(join(import.meta.dirname, '.env'));
+} catch (err) {
+  if (err.code !== 'ENOENT') throw err;
+}
 const KEY = process.env.OPENAI_API_KEY;
 if (!KEY) throw new Error('OPENAI_API_KEY missing');
 // Tier 1 allows 5 images per minute, so 5 shots is the max for one clip.

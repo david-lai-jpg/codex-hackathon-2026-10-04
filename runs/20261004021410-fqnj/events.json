@@ -1,0 +1,144 @@
+[
+ {
+  "t": 0,
+  "type": "tip",
+  "data": {
+   "text": "我同事開會一直偷吃我的乖乖",
+   "created": "2026-10-04T02:14:10.094Z"
+  }
+ },
+ {
+  "t": 20.04,
+  "type": "script",
+  "data": {
+   "headline": "零食國安危機！會議桌淪陷",
+   "ticker": "同事魔手越界｜玉米脆餅失守｜全國抽屜戒嚴",
+   "anchor_script": "緊急插播！一場例行會議，竟爆發零食主權危機！苦主才低頭找筆，同事魔手已三度越界！一口接一口，玉米脆餅慘遭清空！更扯的是，嫌疑人邊嚼邊點頭，企圖把咀嚼偽裝成支持提案！現在桌面拉起封鎖線，最後一顆脆餅由湯匙護送！這究竟是嘴饞，還是辦公室糧食政變？本台持續緊盯！",
+   "cast": "The snack owner is a 28-year-old woman with a straight black bob wearing a yellow cardigan, white blouse, and navy trousers, and the snack-stealing coworker is a 32-year-old man with short black hair wearing a gray shirt and black trousers.",
+   "shots": [
+    {
+     "caption_zh": "低頭找筆零食失守",
+     "scene_en": "In a plain meeting room, the snack owner bends down to retrieve a pen while the snack-stealing coworker reaches toward her unmarked bowl of corn puffs, shown in a wide establishing shot with no text, letters, or logos visible."
+    },
+    {
+     "caption_zh": "魔手三度跨越邊界",
+     "scene_en": "At the meeting table, the snack-stealing coworker stretches his arm theatrically across three parallel rows of pencils to snatch corn puffs while the snack owner remains bent down, shown in an overhead close-up with no text, letters, or logos visible."
+    },
+    {
+     "caption_zh": "嚼不停還假裝贊成",
+     "scene_en": "In the meeting room, the snack-stealing coworker nods solemnly with puffed cheeks while the snack owner stares at her nearly empty bowl in disbelief, shown in an eye-level two-shot with no text, letters, or logos visible."
+    },
+    {
+     "caption_zh": "桌面封鎖糧食戒嚴",
+     "scene_en": "At the meeting table, the snack owner stretches plain red ribbon between empty cups around the bowl while the snack-stealing coworker recoils with both hands raised, shown from a low dramatic angle with no text, letters, or logos visible."
+    },
+    {
+     "caption_zh": "最後一顆湯匙護送",
+     "scene_en": "In the meeting room, the snack owner solemnly carries the final corn puff on a spoon toward an open drawer while the snack-stealing coworker kneels beside the table with clasped hands, shown in a dramatic side-angle tracking shot with no text, letters, or logos visible."
+    }
+   ]
+  }
+ },
+ {
+  "t": 20.04,
+  "type": "frame_start",
+  "data": {
+   "i": 0
+  }
+ },
+ {
+  "t": 20.04,
+  "type": "frame_start",
+  "data": {
+   "i": 1
+  }
+ },
+ {
+  "t": 20.04,
+  "type": "frame_start",
+  "data": {
+   "i": 2
+  }
+ },
+ {
+  "t": 20.04,
+  "type": "frame_start",
+  "data": {
+   "i": 3
+  }
+ },
+ {
+  "t": 20.04,
+  "type": "frame_start",
+  "data": {
+   "i": 4
+  }
+ },
+ {
+  "t": 26.37,
+  "type": "voice",
+  "data": {
+   "url": "/runs/20261004021410-fqnj/anchor.mp3"
+  }
+ },
+ {
+  "t": 28.31,
+  "type": "frame",
+  "data": {
+   "i": 2,
+   "url": "/runs/20261004021410-fqnj/frame-2.jpg"
+  }
+ },
+ {
+  "t": 28.48,
+  "type": "frame",
+  "data": {
+   "i": 1,
+   "url": "/runs/20261004021410-fqnj/frame-1.jpg"
+  }
+ },
+ {
+  "t": 28.96,
+  "type": "frame",
+  "data": {
+   "i": 0,
+   "url": "/runs/20261004021410-fqnj/frame-0.jpg"
+  }
+ },
+ {
+  "t": 29.21,
+  "type": "frame",
+  "data": {
+   "i": 3,
+   "url": "/runs/20261004021410-fqnj/frame-3.jpg"
+  }
+ },
+ {
+  "t": 30.71,
+  "type": "frame",
+  "data": {
+   "i": 4,
+   "url": "/runs/20261004021410-fqnj/frame-4.jpg"
+  }
+ },
+ {
+  "t": 30.71,
+  "type": "clip_start",
+  "data": {}
+ },
+ {
+  "t": 36.07,
+  "type": "clip",
+  "data": {
+   "url": "/runs/20261004021410-fqnj/clip.mp4",
+   "seconds": 35.256
+  }
+ },
+ {
+  "t": 36.07,
+  "type": "ready",
+  "data": {
+   "total_s": 36.07
+  }
+ }
+]

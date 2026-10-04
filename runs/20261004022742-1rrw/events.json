@@ -1,0 +1,144 @@
+[
+ {
+  "t": 0,
+  "type": "tip",
+  "data": {
+   "text": "樓上鄰居半夜在練踢踏舞",
+   "created": "2026-10-04T02:27:42.971Z"
+  }
+ },
+ {
+  "t": 17.6,
+  "type": "script",
+  "data": {
+   "headline": "半夜踢踏震出國安危機",
+   "ticker": "樓上狂踩疑啟動地殼｜樓下棉被宣布戒嚴｜拖鞋特使緊急上樓",
+   "anchor_script": "深夜驚爆！樓上鄰居不是失眠，竟在客廳密訓踢踏舞！一腳下去，樓下布丁集體暈船！兩腳連發，枕頭當場申請避難！住戶抱棉被成立自救會，派出拖鞋特使攻頂交涉！沒想到門一開，對方還邀請加練！這究竟是才藝復興，還是全棟被迫出道？目前雙方已鋪好軟墊，國家睡眠防線暫時守住！",
+   "cast": "The downstairs resident is a 35-year-old woman with a short black bob, yellow pajamas, and blue slippers, and the upstairs tap dancer is a 50-year-old man with curly gray hair, purple pajamas, and black tap shoes.",
+   "shots": [
+    {
+     "caption_zh": "半夜客廳狂踩",
+     "scene_en": "In a midnight upstairs living room, the curly gray-haired man in purple pajamas and black tap shoes performs wildly exaggerated tap steps, filmed from a low angle beside his feet, with no text, letters, or logos visible."
+    },
+    {
+     "caption_zh": "樓下布丁暈船",
+     "scene_en": "In the downstairs bedroom, the black-bobbed woman in yellow pajamas and blue slippers watches pudding wobble violently on her bedside table while clutching her quilt, filmed in a tilted close-up, with no text, letters, or logos visible."
+    },
+    {
+     "caption_zh": "棉被特使攻頂",
+     "scene_en": "In the apartment stairwell, the black-bobbed woman in yellow pajamas and blue slippers marches upstairs wrapped in her quilt like a ceremonial cape, filmed from an overhead angle, with no text, letters, or logos visible."
+    },
+    {
+     "caption_zh": "開門竟邀加練",
+     "scene_en": "At the upstairs apartment doorway, the curly gray-haired man in purple pajamas and black tap shoes enthusiastically demonstrates a dance step to the stunned black-bobbed woman in yellow pajamas and blue slippers wrapped in a quilt, filmed in a wide two-shot, with no text, letters, or logos visible."
+    },
+    {
+     "caption_zh": "軟墊守住睡眠",
+     "scene_en": "In the upstairs living room, the curly gray-haired man in purple pajamas and black tap shoes tiptoes on thick foam mats while the black-bobbed woman in yellow pajamas and blue slippers sleeps peacefully under her quilt on the sofa, filmed in a wide eye-level shot, with no text, letters, or logos visible."
+    }
+   ]
+  }
+ },
+ {
+  "t": 17.6,
+  "type": "frame_start",
+  "data": {
+   "i": 0
+  }
+ },
+ {
+  "t": 17.6,
+  "type": "frame_start",
+  "data": {
+   "i": 1
+  }
+ },
+ {
+  "t": 17.6,
+  "type": "frame_start",
+  "data": {
+   "i": 2
+  }
+ },
+ {
+  "t": 17.6,
+  "type": "frame_start",
+  "data": {
+   "i": 3
+  }
+ },
+ {
+  "t": 17.6,
+  "type": "frame_start",
+  "data": {
+   "i": 4
+  }
+ },
+ {
+  "t": 23.67,
+  "type": "voice",
+  "data": {
+   "url": "/runs/20261004022742-1rrw/anchor.mp3"
+  }
+ },
+ {
+  "t": 27.44,
+  "type": "frame",
+  "data": {
+   "i": 1,
+   "url": "/runs/20261004022742-1rrw/frame-1.jpg"
+  }
+ },
+ {
+  "t": 27.67,
+  "type": "frame",
+  "data": {
+   "i": 4,
+   "url": "/runs/20261004022742-1rrw/frame-4.jpg"
+  }
+ },
+ {
+  "t": 27.98,
+  "type": "frame",
+  "data": {
+   "i": 3,
+   "url": "/runs/20261004022742-1rrw/frame-3.jpg"
+  }
+ },
+ {
+  "t": 28.08,
+  "type": "frame",
+  "data": {
+   "i": 2,
+   "url": "/runs/20261004022742-1rrw/frame-2.jpg"
+  }
+ },
+ {
+  "t": 29.45,
+  "type": "frame",
+  "data": {
+   "i": 0,
+   "url": "/runs/20261004022742-1rrw/frame-0.jpg"
+  }
+ },
+ {
+  "t": 29.45,
+  "type": "clip_start",
+  "data": {}
+ },
+ {
+  "t": 34.62,
+  "type": "clip",
+  "data": {
+   "url": "/runs/20261004022742-1rrw/clip.mp4",
+   "seconds": 34.248
+  }
+ },
+ {
+  "t": 34.62,
+  "type": "ready",
+  "data": {
+   "total_s": 34.62
+  }
+ }
+]
