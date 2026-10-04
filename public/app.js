@@ -326,12 +326,7 @@ async function toggleReplayList() {
   list.hidden = false;
 }
 $('#replayBadge').addEventListener('click', toggleReplayList);
-// On ON AIR, 黃金重播 plays the clip again; the 3X picker in the idle bar replays the whole run.
-$('#replayBtn').addEventListener('click', () => {
-  const v = $('#player');
-  v.currentTime = 0;
-  v.play();
-});
+$('#replayBtn').addEventListener('click', () => run && replay(run.id));
 $('#again').addEventListener('click', home);
 $('#home').addEventListener('click', home);
 

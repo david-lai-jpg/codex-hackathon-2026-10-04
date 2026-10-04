@@ -48,9 +48,6 @@ LANDED=$(js "() => [...document.querySelectorAll('.shot')].map((s) => s.dataset.
 [[ $LANDED =~ ^(true,)*true$ ]] || fail "a frame card landed without its image: $LANDED"
 NEW_CALLS=$(( $(grep -c '^\[openai\]' "$LOG" || true) - CALLS ))
 [[ $NEW_CALLS == 0 ]] || fail "replay made $NEW_CALLS OpenAI calls"
-js "() => { document.querySelector('#player').currentTime = 5; document.querySelector('#replayBtn').click(); return '1'; }" >/dev/null
-wait_for "() => { const v = document.querySelector('#player'); return document.body.dataset.mode === 'air' && !v.paused && v.currentTime < 2 ? '1' : '0'; }" 5 \
-  || fail "黃金重播 on ON AIR did not restart the clip"
 ERRORS=$(pw console error 2>&1 | grep -o 'Errors: [0-9]*' | head -1)
 [[ $ERRORS == "Errors: 0" ]] || fail "console: $ERRORS"
 echo "PASS replay: ON AIR after ${ONAIR} s at 3x, frames loaded at landing [$LANDED], 0 OpenAI calls, clip playing, $ERRORS"
