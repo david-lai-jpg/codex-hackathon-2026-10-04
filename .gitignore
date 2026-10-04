@@ -1,0 +1,7 @@
+node_modules/
+runs/
+.env*
+.DS_Store
+*.pen
+.hackathon/
+.goals/

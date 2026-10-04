@@ -1,0 +1,147 @@
+{
+  "label": "run1-low",
+  "quality": "low",
+  "incident": "我同事偷吃了我放在公司冰箱的便當",
+  "text": {
+    "model": "gpt-6-astra",
+    "effort": "low",
+    "seconds": 16.28,
+    "usage": {
+      "input_tokens": 223,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 576,
+      "output_tokens_details": {
+        "reasoning_tokens": 65
+      },
+      "total_tokens": 799
+    }
+  },
+  "frames_ok": "5/6",
+  "first_frame_s": 24.45,
+  "last_frame_s": 26.73,
+  "tts_s": 5.49,
+  "app_critical_path_s": 26.73,
+  "compose_s": 3.51,
+  "total_with_compose_s": 30.24,
+  "audio_s": 31.704,
+  "ratelimit_first_image": {},
+  "images": [
+    {
+      "i": 0,
+      "start": 16.28,
+      "end": 24.45,
+      "s": 8.17,
+      "status": 200,
+      "usage": {
+        "input_tokens": 107,
+        "input_tokens_details": {
+          "image_tokens": 0,
+          "text_tokens": 107
+        },
+        "output_tokens": 120,
+        "output_tokens_details": {
+          "image_tokens": 120,
+          "text_tokens": 0
+        },
+        "total_tokens": 227
+      }
+    },
+    {
+      "i": 1,
+      "start": 16.28,
+      "end": 26.73,
+      "s": 10.45,
+      "status": 200,
+      "usage": {
+        "input_tokens": 111,
+        "input_tokens_details": {
+          "image_tokens": 0,
+          "text_tokens": 111
+        },
+        "output_tokens": 120,
+        "output_tokens_details": {
+          "image_tokens": 120,
+          "text_tokens": 0
+        },
+        "total_tokens": 231
+      }
+    },
+    {
+      "i": 2,
+      "start": 16.28,
+      "end": 25.76,
+      "s": 9.48,
+      "status": 200,
+      "usage": {
+        "input_tokens": 110,
+        "input_tokens_details": {
+          "image_tokens": 0,
+          "text_tokens": 110
+        },
+        "output_tokens": 120,
+        "output_tokens_details": {
+          "image_tokens": 120,
+          "text_tokens": 0
+        },
+        "total_tokens": 230
+      }
+    },
+    {
+      "i": 3,
+      "start": 16.28,
+      "end": 25.49,
+      "s": 9.21,
+      "status": 200,
+      "usage": {
+        "input_tokens": 106,
+        "input_tokens_details": {
+          "image_tokens": 0,
+          "text_tokens": 106
+        },
+        "output_tokens": 120,
+        "output_tokens_details": {
+          "image_tokens": 120,
+          "text_tokens": 0
+        },
+        "total_tokens": 226
+      }
+    },
+    {
+      "i": 4,
+      "start": 16.28,
+      "end": 18.07,
+      "s": 1.79,
+      "status": 429,
+      "error": {
+        "message": "Rate limit reached for gpt-image-2.5-flare (for limit gpt-image) in organization org-REDACTED on input-images per min: Limit 5, Used 5, Requested 1. Please try again in 12s. Visit https://platform.openai.com/account/rate-limits to learn more.",
+        "type": "input-images",
+        "param": null,
+        "code": "rate_limit_exceeded"
+      }
+    },
+    {
+      "i": 5,
+      "start": 16.28,
+      "end": 26.58,
+      "s": 10.3,
+      "status": 200,
+      "usage": {
+        "input_tokens": 111,
+        "input_tokens_details": {
+          "image_tokens": 0,
+          "text_tokens": 111
+        },
+        "output_tokens": 120,
+        "output_tokens_details": {
+          "image_tokens": 120,
+          "text_tokens": 0
+        },
+        "total_tokens": 231
+      }
+    }
+  ],
+  "clip": "clip.mp4"
+}

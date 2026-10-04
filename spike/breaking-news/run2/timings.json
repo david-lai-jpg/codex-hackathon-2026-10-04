@@ -1,0 +1,134 @@
+{
+  "label": "run2-low-5shots",
+  "quality": "low",
+  "incident": "我同事偷吃了我放在公司冰箱的便當",
+  "text": {
+    "model": "gpt-6-astra",
+    "effort": "low",
+    "seconds": 13.72,
+    "usage": {
+      "input_tokens": 223,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 536,
+      "output_tokens_details": {
+        "reasoning_tokens": 64
+      },
+      "total_tokens": 759
+    }
+  },
+  "frames_ok": "5/5",
+  "first_frame_s": 21.63,
+  "last_frame_s": 23.47,
+  "tts_s": 5.31,
+  "app_critical_path_s": 23.47,
+  "compose_s": 3.96,
+  "total_with_compose_s": 27.43,
+  "audio_s": 32.256,
+  "ratelimit_first_image": {},
+  "images": [
+    {
+      "i": 0,
+      "start": 13.72,
+      "end": 22.56,
+      "s": 8.84,
+      "status": 200,
+      "usage": {
+        "input_tokens": 106,
+        "input_tokens_details": {
+          "image_tokens": 0,
+          "text_tokens": 106
+        },
+        "output_tokens": 120,
+        "output_tokens_details": {
+          "image_tokens": 120,
+          "text_tokens": 0
+        },
+        "total_tokens": 226
+      }
+    },
+    {
+      "i": 1,
+      "start": 13.72,
+      "end": 21.63,
+      "s": 7.91,
+      "status": 200,
+      "usage": {
+        "input_tokens": 115,
+        "input_tokens_details": {
+          "image_tokens": 0,
+          "text_tokens": 115
+        },
+        "output_tokens": 120,
+        "output_tokens_details": {
+          "image_tokens": 120,
+          "text_tokens": 0
+        },
+        "total_tokens": 235
+      }
+    },
+    {
+      "i": 2,
+      "start": 13.72,
+      "end": 21.88,
+      "s": 8.16,
+      "status": 200,
+      "usage": {
+        "input_tokens": 117,
+        "input_tokens_details": {
+          "image_tokens": 0,
+          "text_tokens": 117
+        },
+        "output_tokens": 120,
+        "output_tokens_details": {
+          "image_tokens": 120,
+          "text_tokens": 0
+        },
+        "total_tokens": 237
+      }
+    },
+    {
+      "i": 3,
+      "start": 13.72,
+      "end": 23.47,
+      "s": 9.75,
+      "status": 200,
+      "usage": {
+        "input_tokens": 111,
+        "input_tokens_details": {
+          "image_tokens": 0,
+          "text_tokens": 111
+        },
+        "output_tokens": 120,
+        "output_tokens_details": {
+          "image_tokens": 120,
+          "text_tokens": 0
+        },
+        "total_tokens": 231
+      }
+    },
+    {
+      "i": 4,
+      "start": 13.72,
+      "end": 22.41,
+      "s": 8.69,
+      "status": 200,
+      "usage": {
+        "input_tokens": 117,
+        "input_tokens_details": {
+          "image_tokens": 0,
+          "text_tokens": 117
+        },
+        "output_tokens": 120,
+        "output_tokens_details": {
+          "image_tokens": 120,
+          "text_tokens": 0
+        },
+        "total_tokens": 237
+      }
+    }
+  ],
+  "clip": "clip.mp4"
+}
